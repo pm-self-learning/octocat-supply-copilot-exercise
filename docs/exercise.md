@@ -38,7 +38,7 @@ Refer to [the build docs](./build.md). Ensure that the application is running pr
      # Create and checkout a new feature branch
      git checkout -b feature/cart
 
-     # Verify you're on the new branch
+     # Verify you're on the new branch, you should see `feature/cart` listed first in the terminal with an asterisk (*) next to it
      git branch
      ```
   2. Take a look at the [`plan`](../.github/prompts/plan.prompt.md) prompt.
