@@ -23,25 +23,29 @@ Refer to [the build docs](./build.md).
 
 ### **Exercise: Using Vision and Agent to Generate Cart Functionality**  
 
-- **What to show:** "Vibe coding" using Agent Mode and Vision to complete complex tasks.
-- **Why:** Demonstrate how Copilot Vision can detect design and how Agent can understand a codebase and create complex changes over multiple files.
+- **What to show:** "Vibe coding" using Agent Mode and Vision to complete complex tasks. Also, we will reuse prompts to steamline AI-native workflow
+- **Why:** Demonstrate how Copilot Vision can detect design and how Agent can understand a codebase and create complex changes over multiple files
 - **How:**  
  
-  1. Open Copilot and switch to "Ask" mode. Add the [`plan`](../.github/prompts/plan.prompt.md) prompt to the chat.
-  1. Attach the [cart image](../docs/design/cart.png) using the paperclip icon or drag/drop to add it to the chat.
-  1. Enter the following prompt:
+  1. Take a look at the [`plan`](../.github/prompts/plan.prompt.md) prompt. 
+     - This prompt is used to generate a plan for the changes you want to make. It will analyze the code and suggest changes.
+     - You can also use this prompt to ask Copilot to generate a plan for the changes you want to make.
+     - The plan will be used to generate the changes in the code.
+  2. Open Copilot and switch to "Ask" mode. Add the [`plan`](../.github/prompts/plan.prompt.md) prompt to the chat.
+  3. Attach the [cart image](../docs/design/cart.png) using the paperclip icon or drag/drop to add it to the chat.
+  4. Enter the following prompt:
     ```txt
     I need to implement a simple Cart Page. I also want a Cart icon in the NavBar that shows the number of items in the Cart.
     ```
    Copilot would suggest changes and plan the components to add/modify and even ask clarifying questions.
-  2. Answer some of the questions if you want to refine the plan.
-  3. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
+  5. Answer some of the questions if you want to refine the plan.
+  6. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
     ```txt
     Implement the changes.
     ```
-  4. See how Copilot is making the changes in the files and you can Keep/reject each one.
-  5. Accept Copilot’s suggested fixes.
-  6. Go back to the Frontend app. Navigate to Products. Add items to the cart (note the icon updating). Click on the Cart icon to navigate to the Cart page. See the total, and adding/removing items from the cart.
+  7. See how Copilot is making the changes in the files and you can Keep/reject each one.
+  8. Accept Copilot’s suggested fixes.
+  9. Go back to the Frontend app. Navigate to Products. Add items to the cart (note the icon updating). Click on the Cart icon to navigate to the Cart page. See the total, and adding/removing items from the cart.
 
 
 
