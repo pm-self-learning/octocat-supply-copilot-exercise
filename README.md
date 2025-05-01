@@ -68,6 +68,7 @@ Or use the VS Code tasks:
 - Use the Debug panel to run `Start API & Frontend`
 
 ## Next Steps
+- Fork [this](https://github.com/pm-self-learning/octocat-supply-copilot-exercise) repo, and
 - Complete the [exercise guide](./docs/exercise.md) for detailed instructions on how to use Copilot features
 ## 📚 Documentation
 
