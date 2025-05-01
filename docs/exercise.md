@@ -19,35 +19,58 @@ This app will be used to show the following Copilot features:
 
 ### **Building, Running and Debugging the code**
 
-Refer to [the build docs](./build.md).
+Refer to [the build docs](./build.md). Ensure that the application is running before starting the exercise.
+
 
 ### **Exercise: Using Vision and Agent to Generate Cart Functionality**  
 
-- **What to show:** "Vibe coding" using Agent Mode and Vision to complete complex tasks. Also, we will reuse prompts to steamline AI-native workflow
+- **What to show:** "Vibe coding" using Agent Mode and Vision to complete complex tasks. Also, we will re-use prompts to steamline AI-native workflow
 - **Why:** Demonstrate how Copilot Vision can detect design and how Agent can understand a codebase and create complex changes over multiple files
 - **How:**  
  
-  1. Take a look at the [`plan`](../.github/prompts/plan.prompt.md) prompt. 
+  1. First, create a new feature branch to isolate your changes:
+     ```bash
+     # Make sure you're on the main branch and it's up to date
+     git checkout main
+     git pull
+
+     # Create and checkout a new feature branch
+     git checkout -b feature/cart
+
+     # Verify you're on the new branch
+     git branch
+     ```
+  2. Take a look at the [`plan`](../.github/prompts/plan.prompt.md) prompt.
      - This prompt is used to generate a plan for the changes you want to make. It will analyze the code and suggest changes.
      - You can also use this prompt to ask Copilot to generate a plan for the changes you want to make.
      - The plan will be used to generate the changes in the code.
-  2. Open Copilot and switch to "Ask" mode. Add the [`plan`](../.github/prompts/plan.prompt.md) prompt to the chat.
-  3. Attach the [cart image](../docs/design/cart.png) using the paperclip icon or drag/drop to add it to the chat.
-  4. Enter the following prompt:
+  3. Open Copilot and switch to "Ask" mode. Add the [`plan`](../.github/prompts/plan.prompt.md) prompt to the chat using the paperclip icon or drag/drop to add it to the chat.
+  4. Attach the [cart image](../docs/design/cart.png) using the paperclip icon or drag/drop to add it to the chat.
+  5. Enter the following prompt:
     ```txt
     I need to implement a simple Cart Page. I also want a Cart icon in the NavBar that shows the number of items in the Cart.
     ```
    Copilot would suggest changes and plan the components to add/modify and even ask clarifying questions.
-  5. Answer some of the questions if you want to refine the plan.
-  6. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
+
+  6. Answer some of the questions if you want to refine the plan.
+  7. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
     ```txt
     Implement the changes.
     ```
-  7. See how Copilot is making the changes in the files and you can Keep/reject each one.
-  8. Accept Copilot’s suggested fixes.
-  9. Go back to the Frontend app. Navigate to Products. Add items to the cart (note the icon updating). Click on the Cart icon to navigate to the Cart page. See the total, and adding/removing items from the cart.
-
-
+  8. See how Copilot is making the changes in the files and you can Keep/Undo each one.
+  9. Accept Copilot’s suggested fixes. It might run some commands in the terminal to install dependencies or run the app.
+  10. Once the changes are completed, perform the following steps to test the changes:
+         1.  In the terminal, run `npm run build`,
+         2.  In the terminal, run `npm run dev`, 
+         3.  Open the Frontend app (it runs on port 5137).
+         4.  Navigate to Products. Add items to the cart (note the icon updating). Click on the Cart icon to navigate to the Cart page. See the total, and adding/removing items from the cart.
+11. Once you are happy with the changes, you can end the Agent mode by clicking on `Keep` (to keep changes to all the features) and then `Done` in the Copilot Chat.
+12. Run the following commands to commit and push the changes:
+    ```bash
+    git add .
+    git commit -m "Add Cart functionality"
+    git push origin feature/cart
+    ```
 
 ### **Generate unit tests for the Cart functionality**  
 
@@ -56,7 +79,7 @@ Refer to [the build docs](./build.md).
 - **How:**  
   1. Switch to Agent mode
   2. Ask Copilot to `generate unit tests for the Cart functionality and the icon`
-  3. Show the generated tests
+  3. See the generated tests
   4. Accept the changes
   5. Ask Copilot to run the tests
 1. 
