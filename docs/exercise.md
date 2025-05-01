@@ -7,7 +7,7 @@ This app will be used to show the following Copilot features:
 - **Security**: analyze the code for security vulnerabilities and suggest fixes
 
 
-### **About Up the Demo**
+### **Description**
 
 - **About the App:** This is a modern TypeScript web-app with separate API and Frontend (React) projects that you will enhance with Copilot Agent Mode, and Vision.
 - **Why:** Demonstrate how Copilot can analyze and enhance existing code automatically, understand images, vulnerabilities and testing.
