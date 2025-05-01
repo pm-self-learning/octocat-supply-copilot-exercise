@@ -19,7 +19,7 @@ This app will be used to show the following Copilot features:
 
 ### **Building, Running and Debugging the code**
 
-Refer to [the build docs](./build.md). Ensure that the application is running before starting the exercise.
+Refer to [the build docs](./build.md). Ensure that the application is running properly before starting the exercise.
 
 
 ### **Exercise: Using Vision and Agent to Generate Cart Functionality**  
@@ -28,7 +28,8 @@ Refer to [the build docs](./build.md). Ensure that the application is running be
 - **Why:** Demonstrate how Copilot Vision can detect design and how Agent can understand a codebase and create complex changes over multiple files
 - **How:**  
  
-  1. First, create a new feature branch to isolate your changes:
+  1. First, create a new feature branch to isolate your changes. 
+     - Open a new terminal in VS Code `Terminal > New Terminal` and run the following commands:
      ```bash
      # Make sure you're on the main branch and it's up to date
      git checkout main
