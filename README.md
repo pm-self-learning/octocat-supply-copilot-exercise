@@ -1,4 +1,4 @@
-# 🚀 OctoCAT Supply Chain: The Ultimate GitHub Copilot Demo
+# 🚀 OctoCAT Supply Chain Management 
 
 ![OctoCAT Supply Chain](./frontend/public/hero.png)
 
