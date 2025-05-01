@@ -13,7 +13,7 @@ This app will be used to show the following Copilot features:
 - **Why:** Demonstrate how Copilot can analyze and enhance existing code automatically, understand images, vulnerabilities and testing.
 
 - **Local vs Codespaces:**  
-  - This demo can work in a Codespace.
+  - You can run this exercise in a Codespace.
   - The visibility of the API port (3000) must be set to `public`. This is set in the port attributes of the devcontainer file, but it seems that this config setting isn't always obeyed. Check before running the app! If you forget this, you will see CORS errors when the frontend tries to reach the API.
   
 
