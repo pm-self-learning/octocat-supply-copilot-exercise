@@ -27,7 +27,7 @@ Refer to [the build docs](./build.md).
 - **Why:** Demonstrate how Copilot Vision can detect design and how Agent can understand a codebase and create complex changes over multiple files.
 - **How:**  
  
-  1. Open Copilot and switch to "Ask" mode. Add the `plan` prompt to the chat.
+  1. Open Copilot and switch to "Ask" mode. Add the [`plan`](../.github/prompts/plan.prompt.md) prompt to the chat.
   1. Attach the [cart image](../docs/design/cart.png) using the paperclip icon or drag/drop to add it to the chat.
   1. Enter the following prompt:
     ```txt
