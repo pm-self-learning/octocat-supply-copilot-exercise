@@ -64,4 +64,43 @@ describe('Branch API', () => {
         const response = await request(app).get('/branches/999');
         expect(response.status).toBe(404);
     });
+
+    // Additional tests to improve coverage
+    it('should return 404 when trying to update a non-existing branch', async () => {
+        const updatedBranch = {
+            branchId: 999,
+            headquartersId: 1,
+            name: "Non-existent Branch",
+            description: "This branch doesn't exist",
+            address: "999 Missing St",
+            contactPerson: "Nobody",
+            email: "nobody@octo.com",
+            phone: "555-9999"
+        };
+        const response = await request(app).put('/branches/999').send(updatedBranch);
+        expect(response.status).toBe(404);
+        expect(response.text).toBe('Branch not found');
+    });
+
+    it('should return 404 when trying to delete a non-existing branch', async () => {
+        const response = await request(app).delete('/branches/999');
+        expect(response.status).toBe(404);
+        expect(response.text).toBe('Branch not found');
+    });
+
+    it('should handle non-numeric branch ID correctly', async () => {
+        const response = await request(app).get('/branches/invalid');
+        expect(response.status).toBe(404);
+    });
+
+    it('should verify branch list changes after deletion', async () => {
+        const initialResponse = await request(app).get('/branches');
+        const initialCount = initialResponse.body.length;
+        
+        await request(app).delete('/branches/1');
+        
+        const afterDeleteResponse = await request(app).get('/branches');
+        expect(afterDeleteResponse.body.length).toBe(initialCount - 1);
+        expect(afterDeleteResponse.body.find((b: any) => b.branchId === 1)).toBeUndefined();
+    });
 });
