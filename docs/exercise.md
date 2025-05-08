@@ -53,12 +53,13 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
   6. Answer some of the questions if you want to refine the plan. Check that the prompt file is still attached to the chat, re-add it if not.
      - For example, you can say `I want to use local storage to persist cart across page refreshes`.
     <todo>
+    
   7. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
 
     ```txt
     Implement the changes. 
     ```
-    
+
   8. See how Copilot is making the changes in the files and you can `Keep/Undo` each one.
    ![AgentMode](../docs/agentmode_changedfiles.png)
 
