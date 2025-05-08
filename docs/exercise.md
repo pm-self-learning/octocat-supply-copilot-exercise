@@ -58,6 +58,7 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
     ```txt
     Implement the changes. 
     ```
+    
   8. See how Copilot is making the changes in the files and you can `Keep/Undo` each one.
    ![AgentMode](../docs/agentmode_changedfiles.png)
 
