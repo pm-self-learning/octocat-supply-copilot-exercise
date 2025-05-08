@@ -20,9 +20,16 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
 
 ### **Exercise: Using Vision and Agent to Generate Cart Functionality**  
 
-- **What to show:** "Vibe coding" using Agent Mode and Vision to complete complex tasks. Also, we will re-use prompts to steamline AI-native workflow
-- **Why:** Demonstrate how Copilot Vision can detect design and how Agent can understand a codebase and create complex changes over multiple files
-- **How:**  
+#### What to show
+
+"Vibe coding" using Agent Mode and Vision to complete complex tasks. Also, we will re-use prompts to steamline AI-native workflow
+
+#### Why
+
+Demonstrate how Copilot Vision can detect design and how Agent can 
+understand a codebase and create complex changes over multiple files
+
+#### How:
  
   1. First, create a new feature branch to isolate your changes. 
      - Open a new terminal in VS Code `Terminal > New Terminal` and run the following commands:
@@ -42,7 +49,7 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
      - You can also use this prompt to ask Copilot to generate a plan for the changes you want to make.
      - The plan will be used to generate the changes in the code.
   
-  3. Open Copilot Chat and switch to "Ask" mode. Add the [`plan`](../.github/prompts/plan.prompt.md) prompt to the chat using |`#file` variable.
+  3. Open Copilot Chat and switch to "Ask" mode. Add the [`plan`](../.github/prompts/plan.prompt.md) prompt to the chat using `#file` variable or by selecting the paperclip icon and selecting `prompt` in the file options list.
   4. Attach the [cart image](../docs/design/cart.png) using the paperclip icon or drag/drop to add it to the chat.
   5. Enter this prompt:
     ```txt
@@ -50,13 +57,16 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
     ```
    Copilot would suggest changes and plan the components to add/modify and even ask clarifying questions.
 
-  6. Answer some of the questions if you want to refine the plan. 
+  6. Answer some of the questions if you want to refine the plan. Check that the prompt file is still attached to the chat, re-add it if not.
      - For example, you can say `I want to use local storage to persist cart across page refreshes`.
     <todo>
+
   7. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
-    ```txt
-    Implement the changes. 
-    ```
+
+  ```txt
+  Implement the changes. 
+  ```
+
   8. See how Copilot is making the changes in the files and you can `Keep/Undo` each one.
    ![AgentMode](../docs/agentmode_changedfiles.png)
 
@@ -66,7 +76,7 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
          2.  In the terminal, run `npm run dev` 
          3.  Open the Frontend app (it runs on port 5137).
          4.  Navigate to Products. Add items to the cart (note the icon updating). Click on the Cart icon to navigate to the Cart page. See the total, and adding/removing items from the cart.
-  11. Once you are happy with the changes, you can end the session in Copilot Chat by clicking on `Done`.
+  11. Once you are happy with the changes, you can end the session in Copilot Chat by clicking on `Done`. Note that you can also see which files it has changed and have the option to discard the changes or undo all changes if you do not like what GitHub Copilot has done.
   
   12. Run the following commands to commit and push the changes:
     ```bash
