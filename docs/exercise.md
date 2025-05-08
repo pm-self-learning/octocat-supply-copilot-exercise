@@ -20,9 +20,16 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
 
 ### **Exercise: Using Vision and Agent to Generate Cart Functionality**  
 
-- **What to show:** "Vibe coding" using Agent Mode and Vision to complete complex tasks. Also, we will re-use prompts to steamline AI-native workflow
-- **Why:** Demonstrate how Copilot Vision can detect design and how Agent can understand a codebase and create complex changes over multiple files
-- **How:**  
+#### What to show
+
+"Vibe coding" using Agent Mode and Vision to complete complex tasks. Also, we will re-use prompts to steamline AI-native workflow
+
+#### Why
+
+Demonstrate how Copilot Vision can detect design and how Agent can 
+understand a codebase and create complex changes over multiple files
+
+#### How:
  
   1. First, create a new feature branch to isolate your changes. 
      - Open a new terminal in VS Code `Terminal > New Terminal` and run the following commands:
@@ -53,7 +60,7 @@ Refer to [the build docs](./build.md). Ensure that you are able to build and run
   6. Answer some of the questions if you want to refine the plan. Check that the prompt file is still attached to the chat, re-add it if not.
      - For example, you can say `I want to use local storage to persist cart across page refreshes`.
     <todo>
-    
+
   7. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
 
     ```txt
