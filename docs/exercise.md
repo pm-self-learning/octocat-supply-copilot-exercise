@@ -63,9 +63,9 @@ understand a codebase and create complex changes over multiple files
 
   7. Switch to "Agent" mode in Copilot Chat. Switch to `Claude 3.7 Sonnet` (a good implementation model) and enter this prompt:
 
-    ```txt
-    Implement the changes. 
-    ```
+  ```txt
+  Implement the changes. 
+  ```
 
   8. See how Copilot is making the changes in the files and you can `Keep/Undo` each one.
    ![AgentMode](../docs/agentmode_changedfiles.png)
