@@ -66,9 +66,8 @@ understand a codebase and create complex changes over multiple files
   ```txt
   Implement the changes. 
   ```
-
   8. See how Copilot is making the changes in the files and you can `Keep/Undo` each one.
-   ![AgentMode](../docs/agentmode_changedfiles.png)
+   ![AgentMode](../docs/images/agentmode_changedfiles.png)
 
   9.  As part of implementing the new Cart functionality, the Agent mode might run a command in the terminal. For example, to build the frontend to ensure no errors.
   10. Once the changes are completed, perform the following steps to test the changes:

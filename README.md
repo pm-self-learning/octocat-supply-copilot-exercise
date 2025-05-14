@@ -64,7 +64,7 @@ Or use the VS Code tasks:
 
 ## Next Steps
 
-- Complete the [exercise guide](./docs/exercise.md) for detailed instructions on how to use Copilot features
+- Complete the [exercise guide](./docs/exercise-day2.md) for detailed instructions on how to use Copilot features
 ## 📚 Documentation
 
 - [Detailed Architecture](./docs/architecture.md)
