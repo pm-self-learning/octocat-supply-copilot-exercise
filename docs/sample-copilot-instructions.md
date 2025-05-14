@@ -1,4 +1,4 @@
-[Coding Standards](./prompt-snippets/coding-standards.md)
+[Coding instructions](../.github/prompts/agent.software-engineer.prompt.md)
 
 ## Architecture
 

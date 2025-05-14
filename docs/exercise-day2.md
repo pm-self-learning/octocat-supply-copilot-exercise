@@ -41,7 +41,7 @@ Create a `.github/copilot-instructions.md` file to define project-wide coding st
 
 5. Test your instruction file by implementing a new feature with Copilot's help:
    - Open Copilot Chat, and select `Agent mode`. Use the following prompt:
-     ```
+     ```txt
      Create a new "Suppliers" feature that adds a suppliers link to the navigation bar and displays a list of suppliers fetched from the backend. The list should include the supplier name, and contact information
      ```
    - Review the generated code to verify it follows the instructions in your copilot-instructions.md file

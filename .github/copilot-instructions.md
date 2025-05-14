@@ -1,4 +1,4 @@
-[Coding Standards](./prompt-snippets/coding-standards.md)
+[Coding instructions](../.github/prompts/agent.software-engineer.prompt.md)
 
 ## Architecture
 
@@ -13,7 +13,6 @@ Every time you change the code, make sure that the code compiles by running:
 ```bash
 npm run build
 ```
-
 To run the unit tests for the API, run:
 
 ```bash
