@@ -58,7 +58,8 @@ Create a `.github/copilot-instructions.md` file to define project-wide coding st
 
 ## **Next Steps**
 
-- Create instruction files for different parts of your codebase
+- Create instruction files for different parts of your codebase. Refer to the below article for more details:
+  - [GitHub Copilot: Custom Instructions](https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
 - Share your instruction files with your team
 - Create a library of prompt files for common tasks
 - Experiment with different combinations of instructions and prompts
