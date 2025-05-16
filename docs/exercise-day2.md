@@ -98,13 +98,76 @@ Learn how to use GitHub Copilot to review your code changes and get AI-powered s
    - Your feedback helps improve the quality of suggestions
 
 
+## **Exercise 3: GitHub Copilot for Azure**
+
+### **What You'll Learn**
+Learn how to use GitHub Copilot for Azure to plan and configure cloud deployment for the OctoCAT Supply Chain application.
+
+### **Prerequisites**
+1. Install the GitHub Copilot for Azure extension from VS Code marketplace
+2. Sign in to your Azure account when prompted
+
+
+### **Steps**:
+
+1. **Understanding Resource Requirements**
+   -  Set Chat mode to `Ask` in VS Code's Copilot Chat
+   Try these prompts with @azure:
+   ```
+   @azure What Azure services would you recommend for deploying our React frontend and Express.js API?
+   ```
+    ```
+   @azure How can we containerize and deploy this application securely?
+   ```
+
+2. **Infrastructure Planning**
+    
+    Get help with infrastructure as code:
+
+   - Set Chat mode to `Agent` in VS Code's Copilot Chat and try the following prompt:
+   
+   ```
+   Create a Bicep template for secure deployment of our application with:
+   - Azure App Service for the API
+   - Azure Static Web Apps for the frontend
+   - Azure Key Vault for secrets
+   ```
+
+3. **Security Configuration**
+   Ask about security best practices:
+   ```
+    #azureGetBestPractices What security measures should we implement for our application in Azure?
+  
+   ```
+
+4. **CI/CD Setup**
+   Get help with deployment automation:
+   ```
+   Help me create a GitHub Actions workflow for deploying our application
+   ```
+
+### **Tips for Using @azure**
+- Be specific about your application's architecture and requirements
+- Ask follow-up questions if you need clarification
+- Use the extension to generate deployment templates and configurations
+- Always review and validate generated configurations before deploying
+
+
+## **Conclusion**
+You've now learned how to:
+1. Use custom instructions to improve Copilot's code generation
+2. Leverage Copilot's code review capabilities
+3. Use GitHub Copilot for Azure to plan and configure cloud deployment
+
+These skills will help you develop and deploy applications more efficiently while maintaining high quality and security standards.
+
 ## **Key Takeaways**
 
 - **Custom Instructions**: GitHub Copilot can follow your coding standards and project requirements when provided with clear instructions.
 - **Reusable Prompts**: Create prompt files for common tasks to standardize code generation across your team.
 - **Improved Code Quality**: Properly configured, Copilot can generate code that follows your team's best practices.
-
 - **AI-Powered Code Review**: GitHub Copilot can provide immediate feedback on your code changes, helping catch issues early.
+- **MCP Tool Integration**: Model Context Protocol integration enables comprehensive code analysis and intelligent suggestions by sharing contextual information between Copilot and other development tools.
 
 ## **Next Steps**
 
