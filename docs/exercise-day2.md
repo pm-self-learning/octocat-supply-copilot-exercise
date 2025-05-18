@@ -8,6 +8,10 @@ This exercise demonstrates advanced GitHub Copilot features including custom ins
 - **Copilot Code Review**: Use AI-powered code review to get instant feedback on your code
 - **GitHub Copilot for Azure**: Learn how to leverage Copilot for cloud deployment planning and configuration using Copilot extension in VS Code
 
+## Exercises
+- [**Exercise 1: Setting Up an Instruction File**](#exercise-1-setting-up-an-instruction-file): Setting up an instruction file to define project-wide coding standards
+- [**Exercise 2: Using GitHub Copilot for Code Review**](#exercise-2-github-copilot-code-review): Using GitHub Copilot for code review
+- [**Exercise 3: Using GitHub Copilot for Azure**](#exercise-3-github-copilot-for-azure) (_Stretch Goal_): Using GitHub Copilot for Azure to plan and configure cloud deployment
 
 ## **Description**
 
