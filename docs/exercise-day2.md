@@ -50,9 +50,7 @@ Create a `.github/copilot-instructions.md` file to define project-wide coding st
    - Requirements to update unit tests when code changes are made
    - Guidelines for error handling and logging
    - Instructions to respect the ERD diagram when making database-related changes
-   - Requirements to document API changes in OpenAPI/Swagger
-
-
+ 
 5. Test your instruction file by implementing a new feature with Copilot's help:
    - Open Copilot Chat, and select `Agent` mode. Use the following prompt:
   
