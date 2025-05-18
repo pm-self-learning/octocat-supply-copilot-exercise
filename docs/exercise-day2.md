@@ -1,25 +1,28 @@
-# **GitHub Copilot Customization Exercise**
+# **GitHub Copilot Advanced Features Exercise**
 
-This exercise will show you how to customize GitHub Copilot to improve its code generation capabilities by using instruction files and prompt files.
+This exercise demonstrates advanced GitHub Copilot features including custom instructions, code review capabilities, and Azure integration. Learn how to enhance your development workflow by leveraging these powerful features.
 
 ## **Features to Learn**
 
-- **Instruction Files**: Create and use instruction files to define coding standards and project requirements
+- **Custom Instructions**: Create and use instruction files to define coding standards and project requirements
+- **Copilot Code Review**: Use AI-powered code review to get instant feedback on your code
+- **GitHub Copilot for Azure**: Learn how to leverage Copilot for cloud deployment planning and configuration using Copilot extension in VS Code
 
 
 ## **Description**
 
-- **About the Exercise**: Learn how to make GitHub Copilot follow your coding practices and standards using custom instructions.
-- **Why**: Standardize Copilot's output across your team, improve code quality, and ensure consistency.
+- **About the Exercise**: Master advanced GitHub Copilot features to streamline your development process and improve code quality
+- **Why**: Enhance development productivity, maintain consistent coding standards, and leverage AI for code review and cloud deployment
+- **Outcome**: By the end of this exercise, you'll be able to customize Copilot's behavior, use it for code reviews, and plan Azure deployments
 
 ## **Prerequisites**
 
-- GitHub Copilot extension installed and activated in VS Code
+- GitHub Copilot for Azure extension installed and activated in VS Code
 - Basic understanding of VS Code settings
 
 ## **Getting Started**
 
-Ensure you have the GitHub Copilot extension installed and configured in VS Code before starting the exercise.
+
 
 ## **Exercise 1: Setting Up an Instruction File**
 
@@ -36,15 +39,25 @@ Create a `.github/copilot-instructions.md` file to define project-wide coding st
 
 3. Create a `copilot-instructions.md` file in the `.github` directory:
 
-4. Copy the contents from [sample](../docs/sample-copilot-instructions.md) into your `copilot-instructions.md` file under the `.github` directory, and save it.
+4. Copy the contents from [sample](../docs/sample-copilot-instructions.md) into your `copilot-instructions.md` file under the `.github` directory, and save it. The instruction file in this project contains things like:
+   - Code style guidelines for TypeScript and React development
+   - Requirements to validate and test code changes
+   - Instructions to follow the existing architecture patterns
+   - Requirements to update unit tests when code changes are made
+   - Guidelines for error handling and logging
+   - Instructions to respect the ERD diagram when making database-related changes
+   - Requirements to document API changes in OpenAPI/Swagger
+
 
 5. Test your instruction file by implementing a new feature with Copilot's help:
    - Open Copilot Chat, and select `Agent` mode. Use the following prompt:
+  
      ```txt
      Create a new "Suppliers" feature that adds a suppliers link to the navigation bar and displays a list of suppliers fetched from the backend. The list should include the supplier name, and contact information
      ```
    - Review the generated code to verify it follows the instructions in your copilot-instructions.md file. `copilot-instructions.md` file should get included automatically in the prompt.
-    ![alt text](../docs//images/copilot-instructions-in-prompt.png)
+
+       ![alt text](../docs//images/copilot-instructions-in-prompt.png)
 
    - Test the feature in your application
    - Once you are happy with the changes, click `Keep` to accept the changes and add them to your codebase.

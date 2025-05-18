@@ -67,11 +67,28 @@ Day 1
 - Complete the [exercise guide](./docs/exercise.md) for detailed instructions on how to use Copilot features (agent mode)
 
 Day 2
-- Complete the [exercise guide](./docs/exercise-day2.md) for detailed instructions on how to use Copilot features (custom instructions and Code Review)
-- Explore [GitHub Copilot Extensions](./docs/exercise-ghcp-extensions.md)
+- Complete the [exercise guide](./docs/exercise-day2.md) for detailed instructions on how to use Copilot features (custom instructions, GHCopilot Code Review, and GH Copilot Extensions)
+
 
 ## 📚 Documentation
 
 - [Detailed Architecture](./docs/architecture.md)
+
+## 🎓 Additional Resources
+
+
+- [Getting Started with GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot)
+- [GitHub Copilot Chat Documentation](https://docs.github.com/en/copilot/github-copilot-chat)
+
+- [MS Learn - Training path for GitHub Copilot](https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/)
+
+- [Prompt engineering with GitHub Copilot](https://learn.microsoft.com/en-us/training/modules/introduction-prompt-engineering-with-github-copilot/)
+- [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
+- [What AI model to use in GitHub Copilot](https://github.blog/ai-and-ml/github-copilot/a-guide-to-deciding-what-ai-model-to-use-in-github-copilot/)
+- [Copilot Chat Cookbook](https://docs.github.com/en/copilot/copilot-chat-cookbook)
+
+- [GitHub Copilot Changelog](https://github.blog/changelog/?label=copilot)
+- [GitHub YouTube Channel](https://www.youtube.com/@GitHub/videos)
+
 
 
