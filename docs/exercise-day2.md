@@ -182,7 +182,7 @@ These skills will help you develop and deploy applications more efficiently whil
 - **Reusable Prompts**: Create prompt files for common tasks to standardize code generation across your team.
 - **Improved Code Quality**: Properly configured, Copilot can generate code that follows your team's best practices.
 - **AI-Powered Code Review**: GitHub Copilot can provide immediate feedback on your code changes, helping catch issues early.
-- **MCP Tool Integration**: Model Context Protocol integration enables comprehensive code analysis and intelligent suggestions by sharing contextual information between Copilot and other development tools.
+- **GitHub Copilot for Azure extension in VS Code**: Use the extension in Ask or integrate with tools in Agent mode to perform Azure specific tasks.
 
 ## **Next Steps**
 
