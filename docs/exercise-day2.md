@@ -52,7 +52,7 @@ Create a `.github/copilot-instructions.md` file to define project-wide coding st
    - Instructions to respect the ERD diagram when making database-related changes
  
 5. Test your instruction file by implementing a new feature with Copilot's help:
-   - Open Copilot Chat, and select `Agent` mode. Use the following prompt:
+   - Open Copilot Chat, and select `Agent` mode, choose a model, like `Claude 3.7 Sonnet`. Use the following prompt:
   
      ```txt
      Create a new "Suppliers" feature that adds a suppliers link to the navigation bar and displays a list of suppliers fetched from the backend. The list should include the supplier name, and contact information
@@ -182,7 +182,7 @@ These skills will help you develop and deploy applications more efficiently whil
 - **Reusable Prompts**: Create prompt files for common tasks to standardize code generation across your team.
 - **Improved Code Quality**: Properly configured, Copilot can generate code that follows your team's best practices.
 - **AI-Powered Code Review**: GitHub Copilot can provide immediate feedback on your code changes, helping catch issues early.
-- **MCP Tool Integration**: Model Context Protocol integration enables comprehensive code analysis and intelligent suggestions by sharing contextual information between Copilot and other development tools.
+- **GitHub Copilot for Azure extension in VS Code**: Use the extension in Ask or integrate with tools in Agent mode to perform Azure specific tasks.
 
 ## **Next Steps**
 
