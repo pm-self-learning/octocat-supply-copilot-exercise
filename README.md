@@ -63,10 +63,10 @@ Or use the VS Code tasks:
 - Use the Debug panel to run `Start API & Frontend`
 
 ## Next Steps
-Day 1
+Hack Exercise 1
 - Complete the [exercise guide](./docs/exercise.md) for detailed instructions on how to use Copilot features (agent mode)
 
-Day 2
+Hack Exercise 2
 - Complete the [exercise guide](./docs/exercise-day2.md) for detailed instructions on how to use Copilot features (custom instructions, GHCopilot Code Review, and GH Copilot Extensions)
 
 
