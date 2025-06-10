@@ -55,7 +55,7 @@ export default function Welcome() {
                 <span className="text-primary font-medium">15 Years of Experience</span>
               </div>
               <h1 className="text-5xl font-bold mb-6 leading-tight">
-                Professional Logistics and Supply Chain
+                Amateur Logistics and Supply Chain
               </h1>
               <p className="text-gray-200 mb-8 text-lg">
                 OctoCAT Supply has over 15 years of experience in providing top-notch logistics and supply chain solutions. Our team of experts is dedicated to ensuring your goods are delivered on time and in perfect condition.
