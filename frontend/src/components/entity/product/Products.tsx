@@ -2,6 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { api } from '../../../api/config';
+import ProductFilter from './ProductFilter';
 
 interface Product {
   productId: number;
@@ -21,6 +22,7 @@ const fetchProducts = async (): Promise<Product[]> => {
 
 export default function Products() {
   const [quantities, setQuantities] = useState<Record<number, number>>({});
+  const [priceFilter, setPriceFilter] = useState<{ min: number | null; max: number | null }>({ min: null, max: null });
   const { data: products, isLoading, error } = useQuery('products', fetchProducts);
 
   const handleQuantityChange = (productId: number, change: number) => {
@@ -41,6 +43,18 @@ export default function Products() {
       }));
     }
   };
+
+  const handleFilterChange = (minPrice: number | null, maxPrice: number | null) => {
+    setPriceFilter({ min: minPrice, max: maxPrice });
+  };
+
+  // Filter products based on price range
+  const filteredProducts = products?.filter((product) => {
+    const { min, max } = priceFilter;
+    if (min !== null && product.price < min) return false;
+    if (max !== null && product.price > max) return false;
+    return true;
+  }) || [];
 
   if (isLoading) {
     return (
@@ -69,8 +83,10 @@ export default function Products() {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-light mb-6">Products</h1>
 
+        <ProductFilter onFilterChange={handleFilterChange} />
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products?.map((product) => (
+          {filteredProducts.map((product) => (
             <div key={product.productId} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(118,184,82,0.3)]">
               <div className="relative">
                 <img 
