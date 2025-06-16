@@ -24,6 +24,7 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link to="/" className="text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Home</Link>
               <Link to="/products" className="text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Products</Link>
+              <Link to="/suppliers" className="text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Suppliers</Link>
               <Link to="/about" className="text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium">About us</Link>
               {isAdmin && (
                 <div className="relative">
@@ -53,6 +54,13 @@ export default function Navigation() {
                           onClick={() => setAdminMenuOpen(false)}
                         >
                           Manage Products
+                        </Link>
+                        <Link
+                          to="/admin/suppliers"
+                          className="block px-4 py-2 text-sm text-light hover:bg-primary hover:text-white"
+                          onClick={() => setAdminMenuOpen(false)}
+                        >
+                          Manage Suppliers
                         </Link>
                         {/* Space for other entity management links */}
                       </div>

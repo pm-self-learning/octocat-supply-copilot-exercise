@@ -4,9 +4,11 @@ import Welcome from './components/Welcome';
 import About from './components/About';
 import Footer from './components/Footer';
 import Products from './components/entity/product/Products';
+import Suppliers from './components/entity/supplier/Suppliers';
 import Login from './components/Login';
 import { AuthProvider } from './context/AuthContext';
 import AdminProducts from './components/admin/AdminProducts';
+import AdminSuppliers from './components/admin/AdminSuppliers';
 
 function App() {
   return (
@@ -19,8 +21,10 @@ function App() {
               <Route path="/" element={<Welcome />} />
               <Route path="/about" element={<About />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/suppliers" element={<Suppliers />} />
               <Route path="/login" element={<Login />} />
               <Route path="/admin/products" element={<AdminProducts />} />
+              <Route path="/admin/suppliers" element={<AdminSuppliers />} />
             </Routes>
           </main>
           <Footer />
