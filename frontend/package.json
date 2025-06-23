@@ -2,12 +2,14 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "scripts": {
+  "type": "module",  "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:products": "vitest run src/components/entity/product/__tests__/Products.test.tsx"
   },
   "dependencies": {
     "@types/react-slick": "^0.23.13",
